@@ -34,8 +34,7 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 ENV PATH="/app/.venv/bin:$PATH"
 ENV HOME=/app
 ENV UV_CACHE_DIR=/tmp/uv-cache
-ENV DATABASE_URL=postgresql+psycopg://user:pass@db:5432/honcho
-ENV AUTH_USE_AUTH=false
+
 
 
 # Create non-root user and set ownership
